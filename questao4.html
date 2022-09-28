@@ -12,12 +12,14 @@
         const valorDaCompra = Number(prompt('Valor da compra:?'))
         if(valorDaCompra <= 200){
             valorComDesconto = valorDaCompra - valorDaCompra*0.10
+            alert(`Nome do Cliente: ${nomeCliente}\nValor da Compra: ${valorDaCompra.toFixed(2)}\nPercentual de desconto: 10%, Valor do desconto: ${(valorDaCompra*0.10).toFixed(2)}\nValor total a pagar: ${valorComDesconto.toFixed(2)}`)
         } else if(200 < valorDaCompra <= 500){
             valorComDesconto = valorDaCompra - valorDaCompra*0.15
+            alert(`Nome do Cliente: ${nomeCliente}\nValor da Compra: ${valorDaCompra.toFixed(2)}\nPercentual de desconto: 15%, Valor do desconto: ${(valorDaCompra*0.15).toFixed(2)}\nValor total a pagar: ${valorComDesconto.toFixed(2)}`)
         } else if(valorDaCompra > 500){
             valorComDesconto = valorDaCompra - valorDaCompra*0.2
+            alert(`Nome do Cliente: ${nomeCliente}\nValor da Compra: ${valorDaCompra.toFixed(2)}\nPercentual de desconto: 20%, Valor do desconto: ${(valorDaCompra*0.2).toFixed(2)}\nValor total a pagar: ${valorComDesconto.toFixed(2)}`)
         }
-        alert(`Nome do Cliente': ${nomeCliente}\nValor da compra: ${valorDaCompra}\nValor do desconto: `)
     </script>
 </body>
 </html>
