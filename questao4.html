@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nomeCliente = String(prompt("Olá, qual o seu nome? "))
+        const valorDaCompra = Number(prompt('Valor da compra:?'))
+        if(valorDaCompra <= 200){
+            valorComDesconto = valorDaCompra - valorDaCompra*0.10
+        } else if(200 < valorDaCompra <= 500){
+            valorComDesconto = valorDaCompra - valorDaCompra*0.15
+        } else if(valorDaCompra > 500){
+            valorComDesconto = valorDaCompra - valorDaCompra*0.2
+        }
+        alert(`Nome do Cliente': ${nomeCliente}\nValor da compra: ${valorDaCompra}\nValor do desconto: `)
+    </script>
+</body>
+</html>
